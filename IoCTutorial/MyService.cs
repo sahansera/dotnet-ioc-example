@@ -21,10 +21,10 @@ namespace IoCTutorial
         
         // Multiple Dependencies example
         // private readonly IEnumerable<IMyDependency> _myDependencies;
-        // public MyService(IMyDependency myDependency)
+        // public MyService(IEnumerable<IMyDependency> myDependencies)
         // {
         //     Console.WriteLine("Constructed MyService");
-        //     _myDependency = myDependency;
+        //     _myDependencies = myDependencies;
         // }
         
         public void DoSomething()
@@ -36,7 +36,6 @@ namespace IoCTutorial
             // {
             //     dependency.DoWork();
             // }
-            //
             // _myDependencies
             //     .FirstOrDefault(x => x.GetType() == typeof(MyDependency))?.DoWork();
         }
